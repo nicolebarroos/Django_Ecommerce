@@ -123,9 +123,9 @@ STATIC_URL = '/static/'
 
 #Email
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'barrosnicole094@gmail.com'
-EMAIL_HOST_PASSWORD = '*'
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = 'a2017095727b5e'
+EMAIL_HOST_PASSWORD = '7550f3e7aa3d0d'
 EMAIL_PORT = 587
 
 
