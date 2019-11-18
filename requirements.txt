@@ -1,0 +1,8 @@
+certifi==2019.9.11
+Django==2.1.7
+django-thumbnails==0.2.1
+django-watson==1.5.3
+django-widget-tweaks==1.4.5
+pytz==2019.3
+wincertstore==0.2
+Pillow==6.2.1

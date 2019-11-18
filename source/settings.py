@@ -14,6 +14,8 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -38,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'catalog',
     'widget_tweaks',
+    #'easy_thumbnails',
 ]
 
 MIDDLEWARE = [
@@ -139,3 +143,5 @@ MESSAGE_TAGS = {
     messages_constants.WARNING: 'warning',
     messages_constants.ERROR: 'danger',
 }
+
+
