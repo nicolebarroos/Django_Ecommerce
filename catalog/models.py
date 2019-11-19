@@ -20,7 +20,7 @@ class Category(models.Model):
 
     def get_absolute_url(self):
         
-        return reverse('catalog.views.category', args=[str(self.id)])
+        return reverse('catalog:category', kwargs={'slug': self.slug})
 
 
 

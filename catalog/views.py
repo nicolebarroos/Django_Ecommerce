@@ -9,6 +9,9 @@ from .models import Product, Category
 #O django-watson é um rápido plug-in de pesquisa de texto completo com vários modelos para o Django
 from watson import search as watson
 
+#class GenericViewError(Exception):
+#    """A problem in a generic view."""
+#    pass
 
 class ProductListView(generic.ListView):
     template_name = 'catalog/product_list.html'
