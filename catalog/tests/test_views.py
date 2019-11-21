@@ -26,6 +26,6 @@ class ProductListTestCase(TestCase):
         product_list = response.context['products']
         #self.assertEquals(product_list.count(), 3)
 
-    #def test_page_not_found(self):
-        #response = self.client.get('/templates/catalog')
-        #self.assertEquals(response.status_code, 404)
+    def test_page_not_found(self):
+        response = self.client.get('/templates/catalog')
+        self.assertEquals(response.status_code, 404)
