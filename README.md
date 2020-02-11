@@ -10,4 +10,4 @@ Uso dos testes unitários em django: https://docs.djangoproject.com/pt-br/3.0/in
 
 Com esse projeto é possível cadastrar produtos, categorias e subcategorias. Também é possível entrar em contato, através do preenchimento do formulário.
 
-(Projeto em contrução e melhorias)
+
