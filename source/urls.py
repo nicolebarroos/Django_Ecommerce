@@ -24,9 +24,8 @@ from core import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index, name='index'),
-    #path('notfound/', views.notfound, name='notfound'),
+    path('', views.index, name='index'),
     path('contato/', views.contact, name='contact'),
-    path('catalog/', include('catalog.urls')),
-    path('accounts/', include('accounts.urls')),
+    path('catalog/', include('catalog.urls', namespace='catalog')),
+    path('accounts/', include('accounts.urls', namespace='accounts')),
 ]
