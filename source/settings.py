@@ -29,6 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = 'accounts.User'
 
 # Application definition
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'catalog',
+    'accounts',
     'widget_tweaks',
     #'easy_thumbnails',
 ]
@@ -131,6 +133,9 @@ EMAIL_HOST = 'smtp.mailtrap.io'
 EMAIL_HOST_USER = 'a2017095727b5e'
 EMAIL_HOST_PASSWORD = '7550f3e7aa3d0d'
 EMAIL_PORT = 587
+
+#auth
+['django.contrib.auth.backends.ModelBackend']
 
 
 

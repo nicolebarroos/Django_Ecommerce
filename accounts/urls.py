@@ -1,9 +1,13 @@
 
 from django.urls import path
-from django.views.generic import TemplateView
+#from django.views.generic.edit import CreateView
+from .views import RegisterCreate, IndexView
+
 
 from . import views
 
+
 urlpatterns = [
-    path('', TemplateView.as_view(template_name='index.html')),
+    path('', IndexView.as_view(), name='index.html'),
+    path('register', views.RegisterCreate.as_view(), name='register.html'),
 ]
