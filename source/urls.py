@@ -21,14 +21,17 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.contrib.auth.views import LoginView, LogoutView
 from django.contrib.auth import views as auth_views
-
 from core import views
+
+
+
+app_name = 'accounts'
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
+    path('accounts-index/', include('accounts.urls', namespace='accounts-index')),
     path('contato/', views.contact, name='contact'),
     path('catalog/', include('catalog.urls', namespace='catalog')),
     path('accounts/', include('accounts.urls', namespace='accounts')),

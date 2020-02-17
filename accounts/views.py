@@ -11,7 +11,7 @@ from django.urls import reverse_lazy
 
 
 
-class InicioView(TemplateView):
+class IndexView(TemplateView):
 
     template_name = 'accounts/index.html'
 
@@ -51,7 +51,7 @@ class ModifyPassword(LoginRequiredMixin, FormView):
         return super(ModifyPassword, self). form_valid(form)
 
     
-index = InicioView.as_view()
+index = IndexView.as_view()
 register = RegisterCreate.as_view()
 update_user = RegisterUpdate.as_view()
 update_password = ModifyPassword.as_view()
