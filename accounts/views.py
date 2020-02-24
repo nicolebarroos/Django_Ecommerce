@@ -31,14 +31,14 @@ class RegisterUpdate(LoginRequiredMixin, UpdateView):
     model = User
     template_name = 'accounts/update_user.html'
     fields = ['name', 'email']
-    success_url = reverse_lazy('accounts:index')
+    success_url = reverse_lazy('index')
 
     def get_object(self):
         return self.request.user
 
 class ModifyPassword(LoginRequiredMixin, FormView):
     template_name = 'accounts/update_password.html'
-    success_url = reverse_lazy('accounts:index')
+    success_url = reverse_lazy('index')
     form_class = PasswordChangeForm
 
     def get_form_kwargs(self):

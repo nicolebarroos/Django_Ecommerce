@@ -36,6 +36,6 @@ urlpatterns = [
     path('catalog/', include('catalog.urls', namespace='catalog')),
     path('accounts/', include('accounts.urls', namespace='accounts')),
 
-    path('accounts/login', auth_views.LoginView.as_view(template_name='login.html')),
-    path('accounts/logout', auth_views.LogoutView.as_view(template_name='logout.html')),
+    path('entrar', auth_views.LoginView.as_view(template_name = 'core/login.html')),
+    path('sair', auth_views.LogoutView.as_view(template_name='logout.html')),
 ]

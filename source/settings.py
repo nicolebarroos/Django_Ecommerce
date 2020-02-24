@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 
 # auth
 LOGIN_URL = 'login'
-#LOGIN_REDIRECT_URL = 'accounts:index'
+LOGIN_REDIRECT_URL = 'accounts-index/'
 LOGOUT_URL = 'logout'
 AUTH_USER_MODEL = 'accounts.User'
 AUTHENTICATION_BACKENDS = (
