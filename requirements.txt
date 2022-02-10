@@ -1,5 +1,5 @@
 certifi==2019.9.11
-Django==2.2
+Django==2.2.27
 django-thumbnails==0.2.1
 django-watson==1.5.3
 django-widget-tweaks==1.4.5
